@@ -1,0 +1,149 @@
+::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    margin: 0;
+}
+.attribution {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    padding: 0;
+}
+.image {
+    width: 108%;
+    height: 100%;
+    /* object-fit: cover; */
+    padding: 0;
+}
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin-top: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+}
+.input {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-left: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+button {
+    width: 97%;
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    /* margin-top: 1rem; */
+}
+button:hover{
+    background-color: brown;
+}
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.first {
+    text-align: left;
+    width: 10%;
+  }
+.second {
+    text-align: left;
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: left;
+    justify-content: center;
+    display: none;
+}
+.bg {
+    height: auto;
+    width: 15%;
+}
+#error {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        /* margin: 10rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(234, 29%, 20%);
+    }
+    .attribution {
+        display: flex;
+        /* display: none; */
+        flex-direction: row-reverse;
+        gap: 1rem;
+        width: 600px;
+        height: auto;
+        background-color: aliceblue;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .img {
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+    }
+    .text {
+        width: 50%;
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+    .item p , p{
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+    .success {
+        padding-left: unset;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: left;
+        justify-content: center;
+        display: none;
+        width: 300px;
+        height: auto;
+        background-color: aliceblue;
+        border-radius: 20px;
+    }
+    .bg {
+        height: auto;
+        width:15%;
+    }
+    #button1 {
+        width: 100%;
+    }
+}
