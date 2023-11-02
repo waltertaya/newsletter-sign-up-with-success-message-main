@@ -24,18 +24,18 @@ function dismiss () {
  
 }
 
-// let success = document.getElementById('success');
-// let main = document.getElementById('main');
-// let input = document.getElementById('input');
+let success = document.getElementById('success');
+let main = document.getElementById('main');
+let input = document.getElementById('input');
 
-// function btn (){
-//     if(input.value.includes('@' && '.' ) && input.value.length >13){
-//         success.style.display = 'block';
-//         main.style.display = 'none';
-//     }
+function btn (){
+    if(input.value.includes('@' && '.' ) && input.value.length >13){
+        success.style.display = 'block';
+        main.style.display = 'none';
+    }
 
-//     else {
-//         success.style.display = 'none';
-//         main.style.display = 'block';
-//     }
-// }
+    else {
+        success.style.display = 'none';
+        main.style.display = 'block';
+    }
+}
